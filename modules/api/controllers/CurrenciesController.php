@@ -4,6 +4,7 @@ namespace app\modules\api\controllers;
 
 use Yii;
 use yii\rest\ActiveController;
+use app\modules\api\models\Currency;
 
 class CurrenciesController extends ActiveController
 {
@@ -18,4 +19,9 @@ class CurrenciesController extends ActiveController
 
         return $actions;
     }
+
+    public $serializer = [
+        'class' => 'yii\rest\Serializer',
+        'collectionEnvelope' => 'data',
+    ];
 }
