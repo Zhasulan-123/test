@@ -8,3 +8,7 @@
 - \_`Apache_2.4` (Apache 2.4)
 - \_`PHP` (PHP 7.2)
 - \_`MYSQL` (MYSQL 5.7)
+
+### Создать Базу данных
+
+- \_`currencies_test`
