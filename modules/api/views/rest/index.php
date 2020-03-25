@@ -26,7 +26,24 @@ $this->title = Yii::t('app', 'Валюты api');;
         <!-- Info boxes -->
         <div class="row">
             <div class="col-md-12">
-
+                <div class="card card-primary card-outline">
+                    <div class="card-header">
+                        <h5 class="card-title m-0"><?= Yii::t('app', 'Список курсов валют GET /currencies'); ?></h5>
+                    </div>
+                    <div class="card-body">
+                        <h6 class="card-title">https://localhost:80/api/currencies?_format=json</h6><br>
+                        <h6 class="card-title">https://localhost:80/api/currencies?_format=xml</h6>
+                    </div>
+                </div>
+                <div class="card card-primary card-outline">
+                    <div class="card-header">
+                        <h5 class="card-title m-0"><?= Yii::t('app', 'Курс валют GET /currencies/{id}'); ?></h5>
+                    </div>
+                    <div class="card-body">
+                        <h6 class="card-title">https://localhost:80/api/currencies/view?id=40&_format=json</h6><br>
+                        <h6 class="card-title">https://localhost:80/api/currencies/view?id=40&_format=xml</h6>
+                    </div>
+                </div>
             </div>
         </div>
         <!-- /.row -->
