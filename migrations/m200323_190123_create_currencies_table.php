@@ -1,0 +1,32 @@
+<?php
+
+use yii\db\Migration;
+
+/**
+ * Handles the creation of table `{{%currencies}}`.
+ */
+class m200323_190123_create_currencies_table extends Migration
+{
+    /**
+     * {@inheritdoc}
+     */
+    public function safeUp()
+    {
+        $this->createTable('{{%currencies}}', [
+            'id' => $this->primaryKey(),
+            'name' => $this->string(5)->notNull(),
+            'rate' => $this->money(8, 2)->notNull(),
+            'date' => $this->string(8)->notNull(),
+            'created_at' => $this->dateTime()->notNull(),
+            'updated_at' => $this->dateTime(),
+        ]);
+    }
+
+    /**
+     * {@inheritdoc}
+     */
+    public function safeDown()
+    {
+        $this->dropTable('{{%currencies}}');
+    }
+}
