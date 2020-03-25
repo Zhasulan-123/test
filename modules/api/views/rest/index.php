@@ -25,13 +25,12 @@ $this->title = Yii::t('app', 'Валюты api');;
     <div class="container">
         <!-- Info boxes -->
         <div class="row">
-            hhhhh
+            <div class="col-md-12">
+
+            </div>
         </div>
         <!-- /.row -->
     </div>
     <!--/. container-fluid -->
 </section>
 <!-- /.content -->
-
-<?php //$this->registerJsFile('@web/js/pageCreate.js', ['depends' => 'app\assets\JqueryAsset']); 
-?>
