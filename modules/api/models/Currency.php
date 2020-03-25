@@ -3,7 +3,6 @@
 namespace app\modules\api\models;
 
 use Yii;
-use yii\web\Linkable;
 use app\modules\admin\models\Currencies;
 
 /**
@@ -18,6 +17,7 @@ use app\modules\admin\models\Currencies;
  */
 class Currency extends Currencies
 {
+
     public function fields()
     {
         return [
