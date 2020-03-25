@@ -11,4 +11,4 @@
 
 ### Создать Базу данных
 
-- \_`currencies_test`
+- \ `currencies_test`
