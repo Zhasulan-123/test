@@ -54,7 +54,7 @@ class CurrenciesController extends AppController
         }
     }
 
-    public function actionApi()
+    public function actionCreate()
     {
 
         $client = new Client();
